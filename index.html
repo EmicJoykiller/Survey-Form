@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
 </head>
 <body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the survey form below.</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required />
+
+    <label for="email" id="email-label">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required />
+
+    <label for="number" id="number-label">Number</label>
+    <input id="number" type="number" placeholder="Enter your age" required min="18" max="100" />
+
+    <select id="dropdown">
+      <option></option>
+      <option></option>
+    </select>
+
+    <fieldset>
+      <legend>Select one option:</legend>
+      <label>value1</label>
+      <input name="option-group" type="radio" value="radio1" />
+      <label>value2</label>
+      <input name="option-group" type="radio" value="radio2" />
+    </firldset>
+
+    <fieldset>
+      <legend>Select multiple options:</legend>
+      <label>checkbox1</label>
+      <input type="checkbox" value="checkbox1" />
+      <label>checkbox2</label>
+      <input type="checkbox" value="checkbox2" />
+
+    </fieldset>
+
+    <label>additional comments</label>
+    <textarea></textarea>
+    
+
+  </form>
     
 </body>
 </html>
